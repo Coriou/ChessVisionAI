@@ -10,21 +10,21 @@ The model is trained using transfer learning from MobileNetV2 and can classify t
 
 ### Generate a dataset
 
-Run the `datagen.ipynb` notebook to generate a dataset from the pieces & board in the `data` directory. It took my Intel CPU 20 minutes to generate roughly 10k images / piece.
+Run the [`datagen.ipynb`](https://github.com/Coriou/ChessVisionAI/blob/main/datagen.ipynb) notebook to generate a dataset from the pieces & board in the `data` directory. It took my Intel CPU 20 minutes to generate roughly 10k images / piece.
 
 The data is the default board & pieces found on [chess.com](https://chess.com).
 
 ### Train the model
 
-Run the `train.ipynb` notebook to train the model on the generated dataset. The last cell will evaluate the model's performances on the test dataset.
+Run the [`train.ipynb`](https://github.com/Coriou/ChessVisionAI/blob/main/train.ipynb) notebook to train the model on the generated dataset. The last cell will evaluate the model's performances on the test dataset.
 
 Took just over an hour to train on my Intel CPU thanks to transfer learning from MobileNetV2 (might be better performing pretrained ImageNet models out there).
 
 ### Test
 
-Run the `predict_board.ipynb` to test it against a screenshot.
+Run the [`predict_board.ipynb`](https://github.com/Coriou/ChessVisionAI/blob/main/predict_board.ipynb) to test it against a screenshot.
 
-Can also test indivual squares and _debug_ the model in the `infer.ipynb`.
+Can also test indivual squares and _debug_ the model in the [`infer.ipynb`](https://github.com/Coriou/ChessVisionAI/blob/main/infer.ipynb).
 
 ## Detect chessboard from a larger image
 
@@ -39,7 +39,7 @@ This project enhances the original model to detect and extract a chessboard from
 
 ### Usage:
 
-To use the enhanced chessboard detection, run the `detect_chessboard.ipynb` notebook. This notebook demonstrates how to detect and extract a chessboard from a larger image, handling various orientations and image sizes.
+To use the enhanced chessboard detection, run the [`detect_chessboard.ipynb`](https://github.com/Coriou/ChessVisionAI/blob/main/detect_chessboard.ipynb) notebook. This notebook demonstrates how to detect and extract a chessboard from a larger image, handling various orientations and image sizes.
 
 This project aims to provide a more robust and user-friendly solution for chessboard detection in real-world scenarios.
 
