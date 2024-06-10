@@ -28,11 +28,20 @@ Can also test indivual squares and _debug_ the model in the `infer.ipynb`.
 
 ## Detect chessboard from a larger image
 
-The model will only work on images only containing the chessboard. In real life use, this isn't really handy. I've found another project called [tensorflow_chessbot](https://github.com/Elucidation/tensorflow_chessbot) which implemented [chessboard squares detection](https://github.com/Elucidation/tensorflow_chessbot/blob/master/tensorflow_compvision.ipynb) which I have leveraged to detect & extract the chessboard from any screenshot.
+This project enhances the original model to detect and extract a chessboard from any screenshot, even if the image contains other elements or the chessboard is rotated. This solution leverages and improves upon an existing project called [tensorflow_chessbot](https://github.com/Elucidation/tensorflow_chessbot), which implemented [chessboard squares detection](https://github.com/Elucidation/tensorflow_chessbot/blob/master/tensorflow_compvision.ipynb).
 
-I've basically copy / pasted the code, improved it by integrating rotation detection, cleaned it a little and updated it for the newest TF (2.x) and SciPy but it's the same core logic.
+### Key Enhancements:
 
-Run the `detect_chessboard.ipnyb` notebook to use it.
+- **Rotation Detection and correction**: Integrated a rotation detection mechanism to ensure the chessboard is correctly aligned before detection, mitigating issues with skewed images.
+- **Code Modernization**: Updated the code to work with the latest versions of TensorFlow (2.x) and SciPy.
+- **Improved Image Quality**: Applied bicubic interpolation during image rotation to reduce aliasing and improve the visual quality of the rotated images.
+- **Code Cleanup**: Refactored and cleaned up the code for better readability and maintainability.
+
+### Usage:
+
+To use the enhanced chessboard detection, run the `detect_chessboard.ipynb` notebook. This notebook demonstrates how to detect and extract a chessboard from a larger image, handling various orientations and image sizes.
+
+This project aims to provide a more robust and user-friendly solution for chessboard detection in real-world scenarios.
 
 ## Next
 
