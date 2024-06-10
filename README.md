@@ -26,6 +26,14 @@ Run the `predict_board.ipynb` to test it against a screenshot.
 
 Can also test indivual squares and _debug_ the model in the `infer.ipynb`.
 
+## Detect chessboard from a larger image
+
+The model will only work on images only containing the chessboard. In real life use, this isn't really handy. I've found another project called [tensorflow_chessbot](https://github.com/Elucidation/tensorflow_chessbot) which implemented [chessboard squares detection](https://github.com/Elucidation/tensorflow_chessbot/blob/master/tensorflow_compvision.ipynb) which I have leveraged to detect & extract the chessboard from any screenshot.
+
+I've basically copy / pasted the code, improved it by integrating rotation detection, cleaned it a little and updated it for the newest TF (2.x) and SciPy but it's the same core logic.
+
+Run the `detect_chessboard.ipnyb` notebook to use it.
+
 ## Next
 
 In the future, I plan to train the model on more boards and pieces. Currently, the model performs poorly on chessboards from [Lichess](https://lichess.org). Extending the training data to include various board styles should improve performance across different platforms.
