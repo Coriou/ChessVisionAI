@@ -5,3 +5,4 @@ models_wip
 dataset
 pieces_test
 pieces_training
+__pycache__

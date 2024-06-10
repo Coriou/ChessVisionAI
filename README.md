@@ -4,6 +4,8 @@ Chess Vision AI is a project aimed at extracting the state of a chessboard from 
 
 The model is trained using transfer learning from MobileNetV2 and can classify the state of a chessboard with high accuracy.
 
+![demo](https://i.imgur.com/tf9xkNL.png)
+
 ## Usage
 
 ### Generate a dataset
